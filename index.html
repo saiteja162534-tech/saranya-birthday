@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Saranya 🎂</title>
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    font-family:Georgia,serif;
+    overflow-x:hidden;
+}
+
+
+/* =====================================================
+   PAGE 1
+===================================================== */
+
+#page1{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff4ee,
+        #f8d8d8,
+        #f5e1c8
+    );
+
+}
+
+
+/* =====================================================
+   FAIRY LIGHTS
+===================================================== */
+
+.lights{
+
+    position:absolute;
+
+    top:20px;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    z-index:2;
+
+}
+
+.light{
+
+    width:8px;
+    height:8px;
+
+    background:#fff2a8;
+
+    border-radius:50%;
+
+    box-shadow:
+    0 0 10px #fff2a8,
+    0 0 20px #ffd966;
+
+    animation:glow 1.5s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+        opacity:.3;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+/* =====================================================
+   BALLOONS
+===================================================== */
+
+.balloon{
+
+    position:absolute;
+
+    width:70px;
+    height:90px;
+
+    border-radius:50%;
+
+    opacity:.85;
+
+    z-index:1;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.balloon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:1px;
+    height:80px;
+
+    background:#777;
+
+    left:50%;
+    top:88px;
+
+}
+
+.balloon1{
+
+    left:7%;
+    top:18%;
+
+    background:#ef9bab;
+
+}
+
+.balloon2{
+
+    right:7%;
+    top:15%;
+
+    background:#e9bd9f;
+
+    animation-delay:1s;
+
+}
+
+.balloon3{
+
+    right:13%;
+    bottom:15%;
+
+    background:#d9b18b;
+
+    animation-delay:2s;
+
+}
+
+@keyframes float{
+
+    0%,
+    100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+}
+
+
+/* =====================================================
+   FLOWERS
+===================================================== */
+
+.flower{
+
+    position:absolute;
+
+    font-size:55px;
+
+    z-index:1;
+
+}
+
+.flower1{
+
+    left:3%;
+    bottom:5%;
+
+}
+
+.flower2{
+
+    right:3%;
+    bottom:5%;
+
+}
+
+
+/* =====================================================
+   PAGE 1 CONTENT
+===================================================== */
+
+.entry-content{
+
+    position:relative;
+
+    z-index:5;
+
+    padding:25px;
+
+    max-width:900px;
+
+}
+
+.small-title{
+
+    font-family:Arial,sans-serif;
+
+    font-size:16px;
+
+    letter-spacing:5px;
+
+    color:#604d43;
+
+    margin-bottom:15px;
+
+}
+
+.main-title{
+
+    font-family:cursive;
+
+    font-size:clamp(
+        55px,
+        10vw,
+        100px
+    );
+
+    color:#a96b35;
+
+    line-height:1;
+
+}
+
+.birthday-title{
+
+    font-family:Georgia,serif;
+
+    font-size:clamp(
+        38px,
+        7vw,
+        65px
+    );
+
+    letter-spacing:8px;
+
+    color:#a72d50;
+
+    margin-top:15px;
+
+}
+
+.line{
+
+    width:250px;
+
+    height:1px;
+
+    background:#b88a4a;
+
+    margin:25px auto;
+
+}
+
+.subtitle{
+
+    font-size:21px;
+
+    color:#604d43;
+
+    margin-bottom:30px;
+
+}
+
+
+/* =====================================================
+   ENTER BUTTON
+===================================================== */
+
+.enter-btn{
+
+    padding:
+    15px
+    40px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#a72d50;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.enter-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#8f2342;
+
+}
+
+
+/* =====================================================
+   PAGE 2
+===================================================== */
+
+#page2{
+
+    display:none;
+
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding:
+    60px
+    20px;
+
+    background:
+    linear-gradient(
+        rgba(255,248,244,.94),
+        rgba(255,238,240,.96)
+    );
+
+}
+
+
+/* =====================================================
+   FIREWORK CANVAS
+===================================================== */
+
+#fireworks{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+
+/* =====================================================
+   PAGE 2 CONTENT
+===================================================== */
+
+.page2-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+
+/* =====================================================
+   PAGE 2 TITLE
+===================================================== */
+
+.happy{
+
+    font-family:cursive;
+
+    font-size:
+    clamp(
+        55px,
+        9vw,
+        90px
+    );
+
+    color:#a52e4f;
+
+}
+
+.name{
+
+    font-family:Georgia,serif;
+
+    font-size:25px;
+
+    letter-spacing:5px;
+
+    color:#604d43;
+
+    margin-top:10px;
+
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.intro{
+
+    max-width:700px;
+
+    margin:
+    25px auto;
+
+    font-size:20px;
+
+    line-height:1.6;
+
+    color:#59443d;
+
+}
+
+
+/* =====================================================
+   PHOTO GALLERY
+===================================================== */
+
+.gallery{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    margin:
+    40px auto;
+
+}
+
+
+/* =====================================================
+   PHOTO CARD
+===================================================== */
+
+.photo-card{
+
+    width:260px;
+
+    background:white;
+
+    padding:
+    10px
+    10px
+    25px;
+
+    box-shadow:
+    0 10px 25px
+    rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.photo-card:nth-child(1){
+
+    transform:rotate(-3deg);
+
+}
+
+.photo-card:nth-child(2){
+
+    transform:rotate(2deg);
+
+}
+
+.photo-card:nth-child(3){
+
+    transform:rotate(-2deg);
+
+}
+
+.photo-card:hover{
+
+    transform:
+    rotate(0deg)
+    translateY(-8px);
+
+}
+
+
+/* =====================================================
+   IMAGES
+===================================================== */
+
+.photo-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+/*
+   IMPORTANT:
+   IMG3 WILL NOT BE CROPPED
+*/
+
+.photo-card:nth-child(3) img{
+
+    object-fit:contain;
+
+    background:#fffaf7;
+
+}
+
+
+/* Caption */
+
+.caption{
+
+    margin-top:12px;
+
+    font-size:18px;
+
+    color:#704f47;
+
+}
+
+
+/* =====================================================
+   BIRTHDAY MESSAGE
+===================================================== */
+
+.message{
+
+    max-width:750px;
+
+    margin:
+    30px auto;
+
+    padding:
+    30px
+    20px;
+
+    border-top:
+    1px solid #cda18e;
+
+    border-bottom:
+    1px solid #cda18e;
+
+}
+
+.message h2{
+
+    font-family:cursive;
+
+    font-size:42px;
+
+    color:#a52e4f;
+
+    margin-bottom:15px;
+
+}
+
+.message p{
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    color:#59443d;
+
+}
+
+
+/* =====================================================
+   FINAL MESSAGE
+===================================================== */
+
+.final{
+
+    margin-top:30px;
+
+    font-family:cursive;
+
+    font-size:35px;
+
+    color:#a52e4f;
+
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.back-btn{
+
+    margin-top:30px;
+
+    padding:
+    10px
+    25px;
+
+    border:
+    1px solid #a52e4f;
+
+    background:transparent;
+
+    color:#a52e4f;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .balloon{
+
+        width:50px;
+
+        height:70px;
+
+    }
+
+    .balloon::after{
+
+        top:68px;
+
+        height:55px;
+
+    }
+
+    .small-title{
+
+        font-size:12px;
+
+        letter-spacing:3px;
+
+    }
+
+    .birthday-title{
+
+        letter-spacing:4px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+
+    }
+
+    .gallery{
+
+        gap:20px;
+
+    }
+
+    .photo-card{
+
+        width:85vw;
+
+        max-width:300px;
+
+    }
+
+    .photo-card img{
+
+        height:280px;
+
+    }
+
+    .intro,
+    .message p{
+
+        font-size:18px;
+
+    }
+
+    .final{
+
+        font-size:30px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND SONG
+===================================================== -->
+
+<audio
+    id="birthdaySong"
+    loop
+>
+
+    <source
+        src="song3.mpeg"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+
+<!-- =====================================================
+     PAGE 1
+===================================================== -->
+
+<section id="page1">
+
+
+    <!-- FAIRY LIGHTS -->
+
+    <div class="lights">
+
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+        <span class="light"></span>
+
+    </div>
+
+
+    <!-- BALLOONS -->
+
+    <div class="balloon balloon1"></div>
+
+    <div class="balloon balloon2"></div>
+
+    <div class="balloon balloon3"></div>
+
+
+    <!-- FLOWERS -->
+
+    <div class="flower flower1">
+        🌸
+    </div>
+
+    <div class="flower flower2">
+        🌷
+    </div>
+
+
+    <!-- CONTENT -->
+
+    <div class="entry-content">
+
+
+        <div class="small-title">
+
+            WELCOME TO THE
+
+        </div>
+
+
+        <div class="main-title">
+
+            Saranya Chowdary's
+
+        </div>
+
+
+        <div class="birthday-title">
+
+            BIRTHDAY
+
+        </div>
+
+
+        <div class="line"></div>
+
+
+        <div class="subtitle">
+
+            A special day for a very special person ✨
+
+        </div>
+
+
+        <button
+            class="enter-btn"
+            onclick="openBirthday()"
+        >
+
+            Enter the Surprise →
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2
+===================================================== -->
+
+<section id="page2">
+
+
+    <!-- FIREWORKS -->
+
+    <canvas id="fireworks"></canvas>
+
+
+    <div class="page2-content">
+
+
+        <!-- TITLE -->
+
+        <div class="happy">
+
+            Happy Birthday!
+
+        </div>
+
+
+        <div class="name">
+
+            SARANYA CHOWDARY
+
+        </div>
+
+
+        <!-- INTRO -->
+
+        <div class="intro">
+
+            Wishing you a beautiful birthday filled
+            with happiness, laughter and unforgettable
+            memories. 🌸
+
+        </div>
+
+
+
+        <!-- =================================================
+             PHOTOS
+        ================================================== -->
+
+        <div class="gallery">
+
+
+            <!-- IMAGE 1 -->
+
+            <div class="photo-card">
+
+                <img
+                    src="img1.jpeg"
+                    alt="Saranya photo 1"
+                >
+
+                <div class="caption">
+
+                     💗
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 2 -->
+
+            <div class="photo-card">
+
+                <img
+                    src="img2.jpeg"
+                    alt="Saranya photo 2"
+                >
+
+                <div class="caption">
+
+                    Keep smiling 🌸
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 3 -->
+
+            <div class="photo-card">
+
+                <img
+                    src="img3.jpeg"
+                    alt="Saranya photo 3"
+                >
+
+                <div class="caption">
+
+                    A wonderful moment ✨
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             BIRTHDAY MESSAGE
+        ================================================== -->
+
+        <div class="message">
+
+
+            <h2>
+
+                A Little Birthday Note
+
+            </h2>
+
+
+            <p>
+
+                Your kind heart, good character,
+                and the value you give to your friendships
+                make you a truly special person.
+
+                <br><br>
+
+                Stay genuine, keep smiling, and always
+                be the wonderful friend you are.
+
+                <br><br>
+
+                May this year bring you happiness,
+                success, beautiful memories, and
+                countless reasons to smile.
+                 one small intimation : msg cheste reply evandhi nenu em me property lo share adagatala just one reply 
+                 as a friend ga chepa emina mistake unte sry😂
+
+                <br><br>
+
+                Happy Birthday, Saranya!💗🎂✨
+
+            </p>
+
+
+        </div>
+
+
+        <div class="final">
+
+            Keep smiling & keep shining! 🌸
+
+        </div>
+
+
+        <button
+            class="back-btn"
+            onclick="goBack()"
+        >
+
+            ← Back
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+/* =====================================================
+   PAGE 1 → PAGE 2
+===================================================== */
+
+function openBirthday(){
+
+    /*
+       Hide Page 1
+    */
+
+    document.getElementById("page1")
+        .style.display = "none";
+
+
+    /*
+       Show Page 2
+    */
+
+    document.getElementById("page2")
+        .style.display = "block";
+
+
+    /*
+       Go to top
+    */
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+
+    /*
+       START SONG
+
+       Because the user clicked
+       the button, Chrome allows
+       the audio to start.
+    */
+
+    const song =
+        document.getElementById(
+            "birthdaySong"
+        );
+
+
+    song.play().catch(
+        function(error){
+
+            console.log(
+                "Music could not start:",
+                error
+            );
+
+        }
+    );
+
+
+    /*
+       START FIREWORKS
+    */
+
+    startFireworks();
+
+}
+
+
+
+/* =====================================================
+   PAGE 2 → PAGE 1
+===================================================== */
+
+function goBack(){
+
+    /*
+       Stop fireworks
+    */
+
+    stopFireworks();
+
+
+    /*
+       Stop song
+    */
+
+    const song =
+        document.getElementById(
+            "birthdaySong"
+        );
+
+
+    song.pause();
+
+    song.currentTime = 0;
+
+
+    /*
+       Hide Page 2
+    */
+
+    document.getElementById("page2")
+        .style.display = "none";
+
+
+    /*
+       Show Page 1
+    */
+
+    document.getElementById("page1")
+        .style.display = "flex";
+
+
+    /*
+       Go to top
+    */
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+}
+
+
+
+/* =====================================================
+   FIREWORK SYSTEM
+===================================================== */
+
+const canvas =
+    document.getElementById(
+        "fireworks"
+    );
+
+
+const ctx =
+    canvas.getContext("2d");
+
+
+let rockets = [];
+
+let particles = [];
+
+let fireworksRunning = false;
+
+let launchTimer = null;
+
+let animationFrame = null;
+
+
+
+/* =====================================================
+   CANVAS SIZE
+===================================================== */
+
+function resizeCanvas(){
+
+    const page =
+        document.getElementById(
+            "page2"
+        );
+
+
+    canvas.width =
+        window.innerWidth;
+
+
+    canvas.height =
+        Math.max(
+            page.scrollHeight,
+            window.innerHeight
+        );
+
+}
+
+
+window.addEventListener(
+    "resize",
+    resizeCanvas
+);
+
+
+
+/* =====================================================
+   FIREWORK COLOR
+===================================================== */
+
+function randomColor(){
+
+    const colors = [
+
+        "#ff4d6d",
+
+        "#ffbe0b",
+
+        "#8338ec",
+
+        "#3a86ff",
+
+        "#06d6a0",
+
+        "#ff7b00",
+
+        "#ffffff",
+
+        "#ff8fab"
+
+    ];
+
+
+    return colors[
+        Math.floor(
+            Math.random() *
+            colors.length
+        )
+    ];
+
+}
+
+
+
+/* =====================================================
+   CREATE ROCKET
+===================================================== */
+
+function createRocket(){
+
+    rockets.push({
+
+        x:
+            Math.random()
+            * canvas.width,
+
+        y:
+            canvas.height,
+
+        target:
+            Math.random()
+            *
+            (canvas.height * 0.45)
+            + 80,
+
+        speed:
+            7 +
+            Math.random() * 4,
+
+        color:
+            randomColor()
+
+    });
+
+}
+
+
+
+/* =====================================================
+   EXPLODE
+===================================================== */
+
+function explode(rocket){
+
+    const number = 75;
+
+
+    for(
+        let i = 0;
+        i < number;
+        i++
+    ){
+
+        const angle =
+            (Math.PI * 2 / number)
+            * i;
+
+
+        const speed =
+            2 +
+            Math.random() * 5;
+
+
+        particles.push({
+
+            x:
+                rocket.x,
+
+            y:
+                rocket.y,
+
+            vx:
+                Math.cos(angle)
+                * speed,
+
+            vy:
+                Math.sin(angle)
+                * speed,
+
+            life:1,
+
+            size:
+                1 +
+                Math.random() * 2,
+
+            color:
+                rocket.color
+
+        });
+
+    }
+
+}
+
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+function animate(){
+
+    if(
+        !fireworksRunning
+    ){
+
+        return;
+
+    }
+
+
+    /*
+       Clear
+    */
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+
+    /*
+       ROCKETS
+    */
+
+    for(
+        let i = rockets.length - 1;
+        i >= 0;
+        i--
+    ){
+
+        const rocket =
+            rockets[i];
+
+
+        rocket.y -=
+            rocket.speed;
+
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+            rocket.x,
+            rocket.y,
+            3,
+            0,
+            Math.PI * 2
+        );
+
+
+        ctx.fillStyle =
+            rocket.color;
+
+
+        ctx.shadowBlur = 15;
+
+        ctx.shadowColor =
+            rocket.color;
+
+
+        ctx.fill();
+
+
+        ctx.shadowBlur = 0;
+
+
+        /*
+           Explode
+        */
+
+        if(
+            rocket.y <=
+            rocket.target
+        ){
+
+            explode(
+                rocket
+            );
+
+
+            rockets.splice(
+                i,
+                1
+            );
+
+        }
+
+    }
+
+
+    /*
+       PARTICLES
+    */
+
+    for(
+        let i = particles.length - 1;
+        i >= 0;
+        i--
+    ){
+
+        const particle =
+            particles[i];
+
+
+        particle.x +=
+            particle.vx;
+
+
+        particle.y +=
+            particle.vy;
+
+
+        /*
+           Gravity
+        */
+
+        particle.vy +=
+            0.08;
+
+
+        /*
+           Fade
+        */
+
+        particle.life -=
+            0.015;
+
+
+        ctx.globalAlpha =
+            Math.max(
+                particle.life,
+                0
+            );
+
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+            particle.x,
+            particle.y,
+            particle.size,
+            0,
+            Math.PI * 2
+        );
+
+
+        ctx.fillStyle =
+            particle.color;
+
+
+        ctx.shadowBlur = 10;
+
+        ctx.shadowColor =
+            particle.color;
+
+
+        ctx.fill();
+
+
+        ctx.shadowBlur = 0;
+
+
+        ctx.globalAlpha = 1;
+
+
+        /*
+           Remove
+        */
+
+        if(
+            particle.life <= 0
+        ){
+
+            particles.splice(
+                i,
+                1
+            );
+
+        }
+
+    }
+
+
+    animationFrame =
+        requestAnimationFrame(
+            animate
+        );
+
+}
+
+
+
+/* =====================================================
+   START FIREWORKS
+===================================================== */
+
+function startFireworks(){
+
+    /*
+       Stop old fireworks
+    */
+
+    stopFireworks();
+
+
+    /*
+       Resize
+    */
+
+    resizeCanvas();
+
+
+    /*
+       Reset
+    */
+
+    rockets = [];
+
+    particles = [];
+
+
+    /*
+       Start
+    */
+
+    fireworksRunning = true;
+
+
+    /*
+       Immediate fireworks
+    */
+
+    setTimeout(
+        createRocket,
+        200
+    );
+
+    setTimeout(
+        createRocket,
+        500
+    );
+
+    setTimeout(
+        createRocket,
+        900
+    );
+
+    setTimeout(
+        createRocket,
+        1300
+    );
+
+
+    /*
+       Continuous fireworks
+    */
+
+    launchTimer =
+        setInterval(
+            function(){
+
+                if(
+                    document
+                    .getElementById(
+                        "page2"
+                    )
+                    .style.display ===
+                    "none"
+                ){
+
+                    stopFireworks();
+
+                    return;
+
+                }
+
+
+                createRocket();
+
+            },
+            900
+        );
+
+
+    /*
+       Start animation
+    */
+
+    animate();
+
+}
+
+
+
+/* =====================================================
+   STOP FIREWORKS
+===================================================== */
+
+function stopFireworks(){
+
+    fireworksRunning =
+        false;
+
+
+    /*
+       Stop timer
+    */
+
+    if(
+        launchTimer !== null
+    ){
+
+        clearInterval(
+            launchTimer
+        );
+
+        launchTimer = null;
+
+    }
+
+
+    /*
+       Stop animation
+    */
+
+    if(
+        animationFrame !== null
+    ){
+
+        cancelAnimationFrame(
+            animationFrame
+        );
+
+        animationFrame = null;
+
+    }
+
+
+    /*
+       Clear
+    */
+
+    rockets = [];
+
+    particles = [];
+
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+}
+
+
+
+/* =====================================================
+   INITIAL SIZE
+===================================================== */
+
+resizeCanvas();
+
+</script>
+
+
+</body>
+
+</html>
